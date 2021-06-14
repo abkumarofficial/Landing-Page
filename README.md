@@ -1,15 +1,14 @@
 # Landing Page Project
 
-## Table of Contents
+## Contents
 
-* [Instructions](#instructions)
+* [Description](#description)
 
-## Instructions
-1: You can open the page in the browser using index.html
-2: By clicking on the various button on the nav bar, you can reach to any section
+## Description
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+This is the second project for [Udacity's Front End Web Developer Nanodegree program](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011). The aim of this project is to understand how to manipulate the DOM and add contents dynamically to the page. Used Udacity's starter code for HTML and CSS and I wrote JavaScript to make its static page dynamic.
 
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+* Dynamically add sections
+* Dynamically create navigation bar
+* Highlight Sections corresponding sections are in the viewport in the function `makeActive()`.
+* Implemented Event Listeners to got to any section we click

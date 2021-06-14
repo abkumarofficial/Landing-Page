@@ -12,6 +12,29 @@
  * JS Standard: ESlint
  * 
 */
+
+/**
+ * Define Global Variables
+ * 
+*/
+
+
+/**
+ * End Global Variables
+ * Start Helper Functions
+ * 
+*/
+
+
+
+/**
+ * End Helper Functions
+ * Begin Main Functions
+ * 
+*/
+
+// build the nav
+// selecting all the sections in the page
 const allSections = document.querySelectorAll('section');
 const navbar = document.getElementById('navbar__list');
 const fragment = document.createDocumentFragment();
@@ -30,5 +53,38 @@ for (let i = 1; i <= allSections.length ; i += 1) {
     fragment.appendChild(liData);
 }
 navbar.appendChild(fragment);
+// Add class 'active' to section when near top of viewport
+
+
+// Scroll to anchor ID using scrollTO event
+document.addEventListener("scroll", function() {
+  makeActive();
+});
+
+function makeActive() {
+  allSections.forEach(section => {
+    let box = section.getBoundingClientRect();
+
+    if (box.top <= 150 && box.bottom >= 150) {
+        document.querySelector(`.${section.id}`).classList.add('active')
+        section.classList.remove('your-active-class')
+    } else {
+        document.querySelector(`.${section.id}`).classList.remove('active')
+        section.classList.remove('your-active-class')
+    }
+  })
+}
+
+/**
+ * End Main Functions
+ * Begin Events
+ * 
+*/
+
+// Build menu 
+
+// Scroll to section on link click
+
+// Set sections as active
 
 
